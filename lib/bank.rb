@@ -5,10 +5,18 @@ class Account
   end
 
   def deposit(amount)
+    if amount.is_a? Integer
     @balance += amount
+    else
+      "Wrong type of amount, needs to be an Integer"
+    end
   end
 
   def withdraw(amount)
+    if amount.is_a? Integer
     @balance -= amount
+    else
+      "Wrong type of amount, needs to be an Integer"
+    end
   end
 end
