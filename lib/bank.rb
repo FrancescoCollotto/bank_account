@@ -3,4 +3,7 @@ class Account
   def initialize
     @balance = 1000
   end
+
+  def deposit(amount)
+  end
 end
